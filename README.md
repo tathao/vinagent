@@ -1,3 +1,8 @@
+
+![PyPI](https://img.shields.io/pypi/v/vinagent)
+![Downloads](https://img.shields.io/pypi/dm/vinagent)
+![License](https://img.shields.io/github/license/datascienceworld-kan/vinagent)
+
 # 1. Introduction
 
 `vinagent` is a lightweight and flexible library designed for building smart agent assistants across various industries. Whether you're creating an AI-powered customer service bot, a data analysis assistant, or a domain-specific automation agent, vinagent provides a simple yet powerful foundation.
@@ -636,7 +641,7 @@ agent.compiled_graph
 
 # 10. Agent Observability
 
-Vinagent provides a local server that can be used to visualize the workflow and debug the agent. We leverage mlflow observability to track the agent's progress and performance. To use the local server, run the following command:
+Vinagent provides a local server that can be used to visualize the intermediate messsages of Agent's workflow to debug. Engineer can trace the number of tokens, execution time, type of tool, and status of exection. We leverage mlflow observability to track the agent's progress and performance. To use the local server, run the following command:
 
 - Step 1: Start the local mlflow server.
 
@@ -687,10 +692,9 @@ agent = Agent(
 result = agent.invoke(query="What is the weather today in Ha Noi?")
 ```
 
-You can watch the video below to learn more about Agent observability feature:
+An experiment dashboard of Agent will be available on your `jupyter notebook` for your observability. If you run code in terminal environment, you can access the dashboard at `http://localhost:5000/` and view experiment `Vinagent` at tracing tab. Watch the following video to learn more about Agent observability feature:
 
 [![Watch the video](https://img.youtube.com/vi/UgZLhoIgc94/0.jpg)](https://youtu.be/UgZLhoIgc94?si=qidf9fX3i4Cf0ETp)
-
 
 # 9. License
 `vinagent` is released under the MIT License. You are free to use, modify, and distribute the code for both commercial and non-commercial purposes.
